@@ -4,13 +4,7 @@ ETPopupView
 [![CocoaPods](https://img.shields.io/cocoapods/p/ETPopupView.svg)]()
 [![CocoaPods](https://img.shields.io/cocoapods/l/ETPopupView.svg)]()
 
-[中文介绍](http://adad184.com/2015/09/08/opensource-ETPopupView/)
-
-A basic Pop-Up Kit allows you to easily create Pop-Up view. You can focus on the only view you want to show.
-
-Besides, it comes with 2 common Pop-Up view, **MMAlertView** &  **MMSheetView**. You can easily use & customize it.
-
-![demo](https://github.com/adad184/ETPopupView/blob/master/Images/0.jpg)
+Swift version of MMPopupView. 
 
 
 Installation
@@ -24,11 +18,78 @@ pod 'ETPopupView'
 
 and run `pod install`. It will install the most recent version of ETPopupView.
 
-If you would like to use the latest code of ETPopupView use:
-
-```ruby
-pod 'ETPopupView', :head
-```
-
 Usage
 ===============
+MMPopupView is a basic Pop-Up view designed to be subclassed.
+It provide 3 kind of animations(alert, sheet, drop), or you can provide your own animation by override the **showAnimation** and **hideAnimation**.
+
+```objc
+enum ETPopupType {
+    case alert
+    case sheet
+    case custom
+}
+
+typealias ETPopupBlock = (ETPopupView) -> Void
+typealias ETPopupCompletionBlock = (ETPopupView, Bool) -> Void
+
+class ETPopupView: UIView {
+    
+    open var type: ETPopupType = .alert
+    
+    open var animationDuration: TimeInterval = 0.3
+    
+    open var visible: Bool
+    
+    open var attachedView: UIView
+    
+    open var showCompletionBlock: ETPopupCompletionBlock?
+    open var hideCompletionBlock: ETPopupCompletionBlock?
+    
+    open var showAnimation: ETPopupBlock?
+    open var hideAnimation: ETPopupBlock?
+}
+```
+
+If you want to create your own Pop-Up view,simply you only need to subclass from **MMPopupView**.
+
+```swift
+
+class CustomView: ETPopupView {
+
+    let SCREEN_WIDTH = UIScreen.main.bounds.width
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        animationDuration = 0.3
+        type = .alert
+        
+        ETPopupWindow.sharedWindow().touchWildToHide = true
+        
+        self.snp.makeConstraints { (make) in
+            make.width.equalTo(SCREEN_WIDTH*0.8)
+            make.height.equalTo(214)
+        }
+    }
+}
+
+```
+
+after you customize it, you can simply use it.
+
+```swift
+
+  let customView = Bundle.main.loadNibNamed("CustomView", owner: nil, options: nil)?.first as! CustomView
+  customView.show()
+
+```
+
+## Contributing
+
+1. Create an issue to discuss about your idea
+2. Fork it (https://github.com/VolleyZ/ETPopupView/fork)
+3. Create your feature branch (`git checkout -b my-new-feature`)
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create a new Pull Request
