@@ -150,7 +150,6 @@
 				TargetAttributes = {
 					0D45DA371EA45CD20084DAC7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = HU7CX6V97R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -368,7 +367,7 @@
 			baseConfigurationReference = 0613A0DE11EC128F1C4EC6EF /* Pods-ETPopupView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HU7CX6V97R;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ETPopupView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,7 +382,7 @@
 			baseConfigurationReference = 14EDFA2B9244EF3F40690CF9 /* Pods-ETPopupView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HU7CX6V97R;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ETPopupView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
