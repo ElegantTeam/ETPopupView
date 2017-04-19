@@ -6,6 +6,7 @@ ETPopupView
 
 Swift version of MMPopupView. 
 
+![demo](https://github.com/VolleyZ/ETPopupView/blob/master/demo.gif)
 
 Installation
 ============
