@@ -79,7 +79,7 @@ enum ETPopupType {
     case custom
 }
 
-typealias ETpopupBlock = (ETPopupView) -> Void
+typealias ETPopupBlock = (ETPopupView) -> Void
 typealias ETPopupCompletionBlock = (ETPopupView, Bool) -> Void
 
 class ETPopupView: UIView {
@@ -118,8 +118,8 @@ class ETPopupView: UIView {
     open var showCompletionBlock: ETPopupCompletionBlock?
     open var hideCompletionBlock: ETPopupCompletionBlock?
     
-    open var showAnimation: ETpopupBlock?
-    open var hideAnimation: ETpopupBlock?
+    open var showAnimation: ETPopupBlock?
+    open var hideAnimation: ETPopupBlock?
     
     // MARK: noti.name
     private struct ETPopupNoti {
@@ -188,7 +188,7 @@ class ETPopupView: UIView {
     }
     
     // MARK: 默认动画
-    private func alertShowAnimation() -> ETpopupBlock {
+    private func alertShowAnimation() -> ETPopupBlock {
         
         let block: (ETPopupView) -> Void = {
             [weak self] (popupView: ETPopupView) in
@@ -226,7 +226,7 @@ class ETPopupView: UIView {
         return block
     }
     
-    private func alertHideAnimation() -> ETpopupBlock {
+    private func alertHideAnimation() -> ETPopupBlock {
         
         let block: (ETPopupView) -> Void = {
             [weak self] (popupView: ETPopupView) in
@@ -257,7 +257,7 @@ class ETPopupView: UIView {
         return block
     }
     
-    private func sheetShowAnimation() -> ETpopupBlock {
+    private func sheetShowAnimation() -> ETPopupBlock {
         
         let block: (ETPopupView) -> Void = {
             [weak self] (popupView: ETPopupView) in
@@ -298,7 +298,7 @@ class ETPopupView: UIView {
         return block
     }
     
-    private func sheetHideAnimation() -> ETpopupBlock {
+    private func sheetHideAnimation() -> ETPopupBlock {
         
         let block: (ETPopupView) -> Void = {
             [weak self] (popupView: ETPopupView) in
@@ -331,7 +331,7 @@ class ETPopupView: UIView {
         return block
     }
     
-    private func customShowAnimation() -> ETpopupBlock {
+    private func customShowAnimation() -> ETPopupBlock {
         
         let block: (ETPopupView) -> Void = {
             [weak self] _ in
@@ -370,7 +370,7 @@ class ETPopupView: UIView {
         return block
     }
     
-    private func customHideAnimation() -> ETpopupBlock {
+    private func customHideAnimation() -> ETPopupBlock {
         
         let block: (ETPopupView) -> Void = {
             [weak self] _ in
