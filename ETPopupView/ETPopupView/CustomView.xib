@@ -20,7 +20,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="yoG-vm-4sD"/>
                     </constraints>
-                    <state key="normal" title="取消"/>
+                    <state key="normal" title="don't love me"/>
                     <connections>
                         <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="iDu-rG-Kfv"/>
                     </connections>
@@ -30,7 +30,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="lO0-ar-yqO"/>
                     </constraints>
-                    <state key="normal" title="确认"/>
+                    <state key="normal" title="love me"/>
                     <connections>
                         <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="TLX-is-JFT"/>
                     </connections>
@@ -41,19 +41,19 @@
                         <constraint firstAttribute="width" constant="44" id="K16-Oc-mwi"/>
                         <constraint firstAttribute="height" constant="44" id="Yr1-pM-vhD"/>
                     </constraints>
-                    <state key="normal" title="关闭"/>
+                    <state key="normal" title="close"/>
                     <connections>
                         <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="ezJ-OW-o7d"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3X-iH-ABt">
-                    <rect key="frame" x="170" y="30" width="35" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3X-iH-ABt">
+                    <rect key="frame" x="175.5" y="30" width="24.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是提示我是提示我是提示我是提示" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4w-rr-ugZ">
-                    <rect key="frame" x="65.5" y="91" width="245" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love you,you love me, but i don't like you love me." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4w-rr-ugZ">
+                    <rect key="frame" x="29" y="91" width="318" height="36"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D43950F1EA73F070009F689 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43950E1EA73F070009F689 /* SheetView.swift */; };
+		0D4395111EA74A350009F689 /* SheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4395101EA74A350009F689 /* SheetView.xib */; };
 		0D45DA3C1EA45CD20084DAC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D45DA3B1EA45CD20084DAC7 /* AppDelegate.swift */; };
 		0D45DA3E1EA45CD20084DAC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D45DA3D1EA45CD20084DAC7 /* ViewController.swift */; };
 		0D45DA411EA45CD20084DAC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D45DA3F1EA45CD20084DAC7 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		0613A0DE11EC128F1C4EC6EF /* Pods-ETPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETPopupView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETPopupView/Pods-ETPopupView.debug.xcconfig"; sourceTree = "<group>"; };
+		0D43950E1EA73F070009F689 /* SheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		0D4395101EA74A350009F689 /* SheetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SheetView.xib; sourceTree = "<group>"; };
 		0D45DA381EA45CD20084DAC7 /* ETPopupView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETPopupView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D45DA3B1EA45CD20084DAC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D45DA3D1EA45CD20084DAC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				0D45DA3D1EA45CD20084DAC7 /* ViewController.swift */,
 				0D45DA521EA46D770084DAC7 /* CustomView.swift */,
 				0D45DA541EA4704F0084DAC7 /* CustomView.xib */,
+				0D43950E1EA73F070009F689 /* SheetView.swift */,
+				0D4395101EA74A350009F689 /* SheetView.xib */,
 				0D45DA4D1EA45E260084DAC7 /* Classes */,
 				0D45DA3F1EA45CD20084DAC7 /* Main.storyboard */,
 				0D45DA421EA45CD20084DAC7 /* Assets.xcassets */,
@@ -176,6 +182,7 @@
 				0D45DA551EA4704F0084DAC7 /* CustomView.xib in Resources */,
 				0D45DA431EA45CD20084DAC7 /* Assets.xcassets in Resources */,
 				0D45DA411EA45CD20084DAC7 /* Main.storyboard in Resources */,
+				0D4395111EA74A350009F689 /* SheetView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +245,7 @@
 				0D45DA511EA45F5C0084DAC7 /* ETPopupViewExtension.swift in Sources */,
 				0D45DA3E1EA45CD20084DAC7 /* ViewController.swift in Sources */,
 				0D45DA4F1EA45E260084DAC7 /* ETPopupView.swift in Sources */,
+				0D43950F1EA73F070009F689 /* SheetView.swift in Sources */,
 				0D45DA3C1EA45CD20084DAC7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,21 +22,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCx-BC-wNm">
-                                <rect key="frame" x="137" y="120" width="100" height="40"/>
+                                <rect key="frame" x="106" y="120" width="162" height="40"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.80784313730000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bvI-LF-Ghd"/>
-                                    <constraint firstAttribute="width" constant="100" id="sy0-cT-XWn"/>
                                 </constraints>
-                                <state key="normal" title="CustomView"/>
+                                <state key="normal" title="Custom-AlertAnimation"/>
                                 <connections>
-                                    <action selector="showCustomViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynW-QL-85c"/>
+                                    <action selector="alertAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ViA-oy-PfV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zth-8d-ipr">
+                                <rect key="frame" x="96" y="210" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.80784313730000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ehn-4l-Brj"/>
+                                </constraints>
+                                <state key="normal" title="Custom-CustomAnimation"/>
+                                <connections>
+                                    <action selector="customAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGN-fY-aR2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz1-Rc-3BS">
+                                <rect key="frame" x="102.5" y="300" width="169" height="40"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.80784313730000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="leY-64-LrV"/>
+                                </constraints>
+                                <state key="normal" title="Custom-SheetAnimation"/>
+                                <connections>
+                                    <action selector="sheetAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOK-ef-3BX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zCx-BC-wNm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Jx3-hh-Axx"/>
+                            <constraint firstItem="zth-8d-ipr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6lT-N1-S5w"/>
+                            <constraint firstItem="pz1-Rc-3BS" firstAttribute="top" secondItem="zth-8d-ipr" secondAttribute="bottom" constant="50" id="DEf-7u-JPz"/>
+                            <constraint firstItem="zth-8d-ipr" firstAttribute="top" secondItem="zCx-BC-wNm" secondAttribute="bottom" constant="50" id="UXZ-SD-nZw"/>
+                            <constraint firstItem="zCx-BC-wNm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="WTC-UX-KUK"/>
+                            <constraint firstItem="pz1-Rc-3BS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g0C-YG-GcM"/>
                             <constraint firstItem="zCx-BC-wNm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rNB-mC-ChI"/>
                         </constraints>
                     </view>

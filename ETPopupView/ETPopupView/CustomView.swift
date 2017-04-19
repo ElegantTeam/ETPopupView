@@ -9,15 +9,14 @@
 import UIKit
 import SnapKit
 
+let SCREEN_WIDTH = UIScreen.main.bounds.width
 class CustomView: ETPopupView {
-
-    let SCREEN_WIDTH = UIScreen.main.bounds.width
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
         animationDuration = 0.3
-        type = .alert
+//        type = .alert
         
         ETPopupWindow.sharedWindow().touchWildToHide = true
         
