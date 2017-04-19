@@ -20,39 +20,7 @@ and run `pod install`. It will install the most recent version of ETPopupView.
 
 Usage
 ===============
-MMPopupView is a basic Pop-Up view designed to be subclassed.
-It provide 3 kind of animations(alert, sheet, drop), or you can provide your own animation by override the **showAnimation** and **hideAnimation**.
-
-```objc
-enum ETPopupType {
-    case alert
-    case sheet
-    case custom
-}
-
-typealias ETPopupBlock = (ETPopupView) -> Void
-typealias ETPopupCompletionBlock = (ETPopupView, Bool) -> Void
-
-class ETPopupView: UIView {
-    
-    open var type: ETPopupType = .alert
-    
-    open var animationDuration: TimeInterval = 0.3
-    
-    open var visible: Bool
-    
-    open var attachedView: UIView
-    
-    open var showCompletionBlock: ETPopupCompletionBlock?
-    open var hideCompletionBlock: ETPopupCompletionBlock?
-    
-    open var showAnimation: ETPopupBlock?
-    open var hideAnimation: ETPopupBlock?
-}
-```
-
 If you want to create your own Pop-Up view,simply you only need to subclass from **ETPopupView**.
-
 ```swift
 
 class CustomView: ETPopupView {
@@ -83,6 +51,39 @@ after you customize it, you can simply use it.
   let customView = Bundle.main.loadNibNamed("CustomView", owner: nil, options: nil)?.first as! CustomView
   customView.show()
 
+```
+
+ETPopupView
+===============
+ETPopupView is a basic Pop-Up view designed to be subclassed.
+It provide 3 kind of animations(alert, sheet), or you can provide your own animation by override the **showAnimation** and **hideAnimation**.
+
+```objc
+enum ETPopupType {
+    case alert
+    case sheet
+    case custom
+}
+
+typealias ETPopupBlock = (ETPopupView) -> Void
+typealias ETPopupCompletionBlock = (ETPopupView, Bool) -> Void
+
+class ETPopupView: UIView {
+    
+    open var type: ETPopupType = .alert
+    
+    open var animationDuration: TimeInterval = 0.3
+    
+    open var visible: Bool
+    
+    open var attachedView: UIView
+    
+    open var showCompletionBlock: ETPopupCompletionBlock?
+    open var hideCompletionBlock: ETPopupCompletionBlock?
+    
+    open var showAnimation: ETPopupBlock?
+    open var hideAnimation: ETPopupBlock?
+}
 ```
 
 ## Contributing
