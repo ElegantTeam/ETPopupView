@@ -56,7 +56,7 @@ after you customize it, you can simply use it.
 ETPopupView
 ===============
 ETPopupView is a basic Pop-Up view designed to be subclassed.
-It provide 3 kind of animations(alert, sheet), or you can provide your own animation by override the **showAnimation** and **hideAnimation**.
+It provide 3 kind of animations(alert, sheet，Drop), or you can provide your own animation by override the **showAnimation** and **hideAnimation**.
 
 ```objc
 enum ETPopupType {
