@@ -51,7 +51,7 @@ class ETPopupView: UIView {
 }
 ```
 
-If you want to create your own Pop-Up view,simply you only need to subclass from **MMPopupView**.
+If you want to create your own Pop-Up view,simply you only need to subclass from **ETPopupView**.
 
 ```swift
 
